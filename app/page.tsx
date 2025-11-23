@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
 import { Countdown } from "@/components/Countdown";
+import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
@@ -24,6 +24,38 @@ export default function Home() {
           <h1 className="text-6xl font-serif mt-8 slide-up">
             Wedding Invitation
           </h1>
+        </div>
+
+        {/* Couple Names Section */}
+        <div className="px-4 py-8 text-center">
+          <div className="flex flex-col items-center justify-center gap-4 mb-6">
+            <div className="flex items-center justify-center gap-6 w-full max-w-md">
+              <div className="flex-1 text-right">
+                <p className="text-3xl font-serif text-[#baa58a] mb-2 slide-right">
+                  Mậu Hoàng
+                </p>
+                <p className="text-sm text-black/70 uppercase">Chú rể</p>
+              </div>
+
+              <div className="shrink-0">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 100 100"
+                  className="fill-[#baa58a] slide-up"
+                >
+                  <path d="M70.7,71.3c-10.6,7.5-19.6,17.9-20.7,22.2c-1.3-4.3-9.4-14.5-20.8-22C17.5,63.8-0.1,56.6,0,37.4c0.2-35,37-42,50-11.9C62.3-3.4,99.8,2.1,100,37.2C100.1,56.4,82.3,63.1,70.7,71.3L70.7,71.3z" />
+                </svg>
+              </div>
+
+              <div className="flex-1 text-left">
+                <p className="text-3xl font-serif text-[#baa58a] mb-2 slide-left w-[50px]">
+                  Kim Nhung
+                </p>
+                <p className="text-sm text-black/70 uppercase">Cô dâu</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Decorative Flowers */}
